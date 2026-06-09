@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+
 import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 export default function Footer() {
   const scrollTo = (e: React.MouseEvent<HTMLAnchorElement>, hash: string) => {
