@@ -1,0 +1,127 @@
+import { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
+import clsx from 'clsx';
+import { motion, AnimatePresence } from 'framer-motion';
+
+const links = [
+  { name: 'Home', path: '#home' },
+  { name: 'Sobre', path: '#sobre' },
+  { name: 'Áreas de Atuação', path: '#areas' },
+  { name: 'Blog', path: '#blog' },
+  { name: 'Atendimento', path: '#atendimento' },
+  { name: 'Contato', path: '#contato' },
+];
+
+export default function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('#home');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+      
+      // Update active section based on scroll
+      const sections = links.map(link => link.path.substring(1));
+      let current = '';
+      
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element && window.scrollY >= (element.offsetTop - 200)) {
+          current = `#${section}`;
+        }
+      }
+      if (current) setActiveSection(current);
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollTo = (hash: string) => {
+    setMobileMenuOpen(false);
+    const element = document.getElementById(hash.substring(1));
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop - 80,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  return (
+    <header
+      className={clsx(
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
+        isScrolled ? 'bg-dark/90 backdrop-blur-md border-b border-white/5 py-4' : 'bg-transparent py-6'
+      )}
+    >
+      <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center">
+        {/* Logo */}
+        <button onClick={() => scrollTo('#home')} className="z-50 relative group flex items-center h-20 md:h-24 ml-4 lg:ml-12">
+          <img 
+            src="/logo%20original.png" 
+            alt="Tiago Sales Advocacia" 
+            className="h-full w-auto object-contain scale-110 md:scale-125 transform origin-left translate-x-2 md:translate-x-4"
+          />
+        </button>
+
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex items-center space-x-8">
+          {links.map((link) => (
+            <button
+              key={link.path}
+              onClick={() => scrollTo(link.path)}
+              className={clsx(
+                'text-sm uppercase tracking-widest transition-all duration-300 font-light hover:text-gold relative',
+                activeSection === link.path ? 'text-gold' : 'text-light-beige/70'
+              )}
+            >
+              {link.name}
+              {activeSection === link.path && (
+                <motion.div
+                  layoutId="underline"
+                  className="absolute left-0 right-0 h-[1px] bg-gold -bottom-1"
+                />
+              )}
+            </button>
+          ))}
+          
+        </nav>
+
+        {/* Mobile Toggle */}
+        <button
+          className="md:hidden text-light-beige z-50 relative"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
+          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
+      {/* Mobile Nav */}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="fixed inset-0 bg-dark z-40 flex flex-col items-center justify-center space-y-8"
+          >
+            {links.map((link) => (
+              <button
+                key={link.path}
+                onClick={() => scrollTo(link.path)}
+                className={clsx(
+                  'text-2xl font-serif tracking-widest uppercase transition-colors',
+                  activeSection === link.path ? 'text-gold' : 'text-light-beige'
+                )}
+              >
+                {link.name}
+              </button>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </header>
+  );
+}
