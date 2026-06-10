@@ -10,7 +10,7 @@ export default function ContactCTA() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-6xl font-light text-light tracking-tight mb-8"
+          className="text-4xl md:text-6xl font-normal text-light tracking-tight mb-8"
         >
           Pronto para dar o <br />
           <span className="font-medium text-gradient">próximo passo?</span>
@@ -21,7 +21,7 @@ export default function ContactCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="text-light-dark font-light text-lg md:text-xl leading-relaxed mb-12 max-w-2xl mx-auto"
+          className="text-light-dark font-normal text-lg md:text-xl leading-relaxed mb-12 max-w-2xl mx-auto"
         >
           Agende uma consultoria estratégica e descubra como podemos proteger seus interesses com excelência e dedicação.
         </motion.p>

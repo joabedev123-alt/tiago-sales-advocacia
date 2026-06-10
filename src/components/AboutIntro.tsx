@@ -42,7 +42,7 @@ export default function AboutIntro() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-3xl md:text-5xl font-light text-light tracking-tight mb-8 leading-[1.2]"
+            className="text-3xl md:text-5xl font-normal text-light tracking-tight mb-8 leading-[1.2]"
           >
             Advocacia Full Service com <span className="font-medium text-gradient">visão estratégica</span>
           </motion.h2>
@@ -52,7 +52,7 @@ export default function AboutIntro() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-light-dark font-light leading-relaxed text-lg mb-6"
+            className="text-light-dark font-normal leading-relaxed text-lg mb-6"
           >
             Tiago Sales Advocacia e Consultoria Jurídica é um escritório estruturado para oferecer assessoria e representação completa para pessoas físicas e jurídicas.
           </motion.p>
@@ -62,7 +62,7 @@ export default function AboutIntro() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="text-light-dark font-light leading-relaxed text-lg mb-10"
+            className="text-light-dark font-normal leading-relaxed text-lg mb-10"
           >
             Com atuação estratégica, personalizada e foco incansável na solução eficiente, nós não apenas resolvemos problemas legais — construímos blindagem e resultados que protegem o seu futuro e o da sua empresa.
           </motion.p>
@@ -75,11 +75,11 @@ export default function AboutIntro() {
             className="flex gap-12 border-t border-white/10 pt-8"
           >
             <div>
-              <p className="text-3xl font-light text-light mb-2">10+</p>
+              <p className="text-3xl font-normal text-light mb-2">10+</p>
               <p className="text-xs uppercase tracking-widest text-light-dark">Anos de Experiência</p>
             </div>
             <div>
-              <p className="text-3xl font-light text-light mb-2">100%</p>
+              <p className="text-3xl font-normal text-light mb-2">100%</p>
               <p className="text-xs uppercase tracking-widest text-light-dark">Atendimento Personalizado</p>
             </div>
           </motion.div>

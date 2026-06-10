@@ -75,7 +75,7 @@ export default function AreasOfPractice() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-light text-light tracking-tight"
+            className="text-3xl md:text-5xl font-normal text-light tracking-tight"
           >
             Áreas de <span className="font-medium text-gradient">Atuação</span>
           </motion.h2>
@@ -104,7 +104,7 @@ export default function AreasOfPractice() {
                     {area.title}
                   </h3>
                   
-                  <p className="text-light-dark font-light leading-relaxed text-sm">
+                  <p className="text-light-dark font-normal leading-relaxed text-sm">
                     {area.description}
                   </p>
 

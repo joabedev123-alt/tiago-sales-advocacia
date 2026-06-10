@@ -8,20 +8,25 @@ export default {
     extend: {
       colors: {
         dark: {
-          DEFAULT: '#080808', // Preto profundo
-          secondary: '#111111', // Preto secundário
+          DEFAULT: '#011155', // Fundo Principal
+          secondary: '#081848', // Fundo Secundário
+          alternate: '#13276E', // Sessões Alternadas
         },
         brown: {
-          premium: '#4A2518',
-          sophisticated: '#6D3C28',
+          premium: '#6D6E9A', // Usado do gradiente
+          sophisticated: '#F3C21A', // Alterado para Destaque (Dourado) para itálicos
         },
         light: {
-          beige: '#F3ECE4', // Bege luxo
-          cream: '#EFE7DE', // Creme premium
+          beige: '#EAEAEA', // Textos
+          cream: '#B8C0D8', // Textos Secundários
         },
         gold: {
-          DEFAULT: '#C7A26A', // Dourado fosco
+          DEFAULT: '#F3C21A', // Cor de Destaque / Títulos
+          hover: '#FFD44A', // Hover de Botões
         }
+      },
+      backgroundImage: {
+        'gradient-logo': 'linear-gradient(90deg, #011155 0%, #13276E 50%, #6D6E9A 100%)',
       },
       fontFamily: {
         sans: ['Avenir Next Condensed', 'Avenir', 'Helvetica Neue', 'sans-serif'],

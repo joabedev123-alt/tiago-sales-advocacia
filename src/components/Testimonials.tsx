@@ -43,7 +43,7 @@ export default function Testimonials() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-3xl md:text-5xl font-light text-light tracking-tight"
+              className="text-3xl md:text-5xl font-normal text-light tracking-tight"
             >
               O que dizem <span className="font-medium text-gradient">nossos clientes</span>
             </motion.h2>
@@ -76,7 +76,7 @@ export default function Testimonials() {
               className="absolute inset-0 border border-white/5 bg-primary-secundary/50 p-8 md:p-12 flex flex-col justify-center"
             >
               <Quote className="w-10 h-10 text-white/10 mb-6" />
-              <p className="text-xl md:text-2xl font-light text-light leading-relaxed mb-8">
+              <p className="text-xl md:text-2xl font-normal text-light leading-relaxed mb-8">
                 "{testimonials[currentIndex].text}"
               </p>
               <div>

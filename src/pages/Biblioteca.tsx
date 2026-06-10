@@ -11,21 +11,24 @@ export default function Biblioteca() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto py-16 px-8 border border-gold/20 bg-dark-secondary/50 backdrop-blur-sm"
+          className="max-w-5xl mx-auto py-20 px-8 lg:px-16 border-2 border-gold/30 bg-gradient-to-br from-[#081848] to-[#13276E] shadow-[0_0_60px_rgba(243,194,26,0.15)] rounded-2xl relative overflow-hidden"
         >
-          <span className="text-gold uppercase tracking-[0.4em] text-xs mb-6 block">Nossa Cobertura</span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-light-beige font-light leading-snug mb-10">
-            Atendimento presencial em <span className="text-gold">Juazeiro/BA</span> e <span className="text-gold">João Pessoa</span>.<br />
-            <span className="italic text-brown-sophisticated mt-4 block">Atendimento online em todo o território nacional.</span>
+          {/* Efeito de luz de fundo */}
+          <div className="absolute top-[-20%] left-[-10%] w-96 h-96 bg-gold/20 blur-[120px] rounded-full pointer-events-none"></div>
+
+          <span className="relative z-10 text-gold uppercase tracking-[0.4em] text-sm mb-6 block font-bold">Nossa Cobertura</span>
+          <h2 className="relative z-10 text-2xl md:text-3xl lg:text-4xl font-serif text-light-beige font-normal leading-snug mb-10">
+            Atendimento presencial em <span className="text-gold font-bold">Juazeiro/BA</span> e <span className="text-gold font-bold">João Pessoa</span>.{' '}
+            <span className="inline-block mt-4 md:mt-0 bg-gold/15 px-4 py-2 rounded text-gold border border-gold/30 italic font-bold shadow-md ml-0 md:ml-2">Atendimento online em todo o território nacional.</span>
           </h2>
           
           <a 
             href="https://wa.me/5574999880082" 
             target="_blank" 
             rel="noreferrer"
-            className="inline-block border border-gold bg-gold/5 text-gold px-8 py-4 uppercase tracking-widest text-xs font-semibold hover:bg-gold hover:text-dark transition-all duration-300"
+            className="inline-flex relative z-10 items-center justify-center bg-gold text-dark px-12 py-5 rounded-full uppercase tracking-widest text-sm font-bold shadow-[0_0_30px_rgba(243,194,26,0.4)] hover:bg-gold-hover hover:scale-105 hover:shadow-[0_0_50px_rgba(243,194,26,0.6)] transition-all duration-300 mt-4"
           >
-            Solicitar Atendimento
+            Solicitar Atendimento →
           </a>
         </motion.div>
       </div>

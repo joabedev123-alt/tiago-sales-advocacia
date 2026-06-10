@@ -20,7 +20,7 @@ export default function Areas() {
           className="mb-20"
         >
           <span className="text-gold uppercase tracking-[0.4em] text-xs mb-4 block">Nossa Expertise</span>
-          <h1 className="text-5xl lg:text-7xl font-serif text-light-beige font-light">
+          <h1 className="text-5xl lg:text-7xl font-serif text-light-beige font-normal">
             Áreas de <span className="italic text-brown-sophisticated">Atuação</span>.
           </h1>
         </motion.div>
@@ -36,7 +36,7 @@ export default function Areas() {
               <Link to={`/areas/${area.id}`} className="group block h-full border border-white/5 bg-dark-secondary/30 p-8 hover:bg-dark-secondary transition-all duration-500 relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gold/50 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-700"></div>
                 <h3 className="text-2xl font-serif text-light-beige mb-4 group-hover:text-gold transition-colors">{area.title}</h3>
-                <p className="text-light-beige/60 font-light text-sm leading-relaxed">{area.desc}</p>
+                <p className="text-light-beige/90 font-normal text-sm leading-relaxed">{area.desc}</p>
                 <div className="mt-8 text-gold uppercase tracking-widest text-[10px] font-semibold flex items-center">
                   Explorar Expertise
                   <span className="ml-2 transform group-hover:translate-x-2 transition-transform">→</span>

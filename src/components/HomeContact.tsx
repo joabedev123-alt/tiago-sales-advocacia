@@ -15,15 +15,15 @@ export default function HomeContact() {
             transition={{ duration: 0.8 }}
           >
             <span className="text-gold uppercase tracking-[0.4em] text-xs mb-4 block">Fale Conosco</span>
-            <h2 className="text-4xl lg:text-6xl font-serif text-light-beige font-light leading-tight mb-8">
+            <h2 className="text-4xl lg:text-6xl font-serif text-light-beige font-normal leading-tight mb-8">
               Sua estratégia <br />
               <span className="italic text-brown-sophisticated">começa aqui</span>.
             </h2>
-            <p className="text-light-beige/60 font-light text-lg mb-12 max-w-md">
+            <p className="text-light-beige/90 font-normal text-lg mb-12 max-w-md">
               A complexidade exige respostas exclusivas. Agende uma consultoria preliminar para avaliarmos o seu cenário.
             </p>
             
-            <div className="space-y-6 text-sm tracking-widest text-light-beige/80 uppercase font-light">
+            <div className="space-y-6 text-sm tracking-widest text-light-beige uppercase font-normal">
               <div className="flex items-center">
                 <span className="w-12 h-[1px] bg-gold mr-6"></span>
                 <span>(74) 99988-0082</span>
@@ -51,21 +51,21 @@ export default function HomeContact() {
                 <input 
                   type="text" 
                   placeholder="Seu Nome" 
-                  className="w-full bg-transparent text-light-beige font-light focus:outline-none placeholder:text-light-beige/20 focus:placeholder:text-light-beige/40 transition-colors" 
+                  className="w-full bg-transparent text-light-beige font-normal focus:outline-none placeholder:text-light-beige/20 focus:placeholder:text-light-beige transition-colors" 
                 />
               </div>
               <div className="border-b border-white/10 pb-2">
                 <input 
                   type="tel" 
                   placeholder="Telefone / WhatsApp" 
-                  className="w-full bg-transparent text-light-beige font-light focus:outline-none placeholder:text-light-beige/20 focus:placeholder:text-light-beige/40 transition-colors" 
+                  className="w-full bg-transparent text-light-beige font-normal focus:outline-none placeholder:text-light-beige/20 focus:placeholder:text-light-beige transition-colors" 
                 />
               </div>
               <div className="border-b border-white/10 pb-2">
                 <input 
                   type="email" 
                   placeholder="E-mail Corporativo ou Pessoal" 
-                  className="w-full bg-transparent text-light-beige font-light focus:outline-none placeholder:text-light-beige/20 focus:placeholder:text-light-beige/40 transition-colors" 
+                  className="w-full bg-transparent text-light-beige font-normal focus:outline-none placeholder:text-light-beige/20 focus:placeholder:text-light-beige transition-colors" 
                 />
               </div>
               <button 

@@ -59,10 +59,10 @@ export default function AreaDetalhe() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-5xl lg:text-7xl font-serif text-light-beige font-light leading-tight mb-12">
+              <h1 className="text-5xl lg:text-7xl font-serif text-light-beige font-normal leading-tight mb-12">
                 {data.title}
               </h1>
-              <p className="text-light-beige/70 font-light text-lg leading-relaxed mb-16">
+              <p className="text-light-beige font-normal text-lg leading-relaxed mb-16">
                 {data.desc}
               </p>
             </motion.div>
@@ -75,7 +75,7 @@ export default function AreaDetalhe() {
               <h3 className="text-gold uppercase tracking-[0.3em] text-xs mb-8 font-semibold">Nossos Focos de Atuação</h3>
               <ul className="space-y-6">
                 {data.focus.map((item, idx) => (
-                  <li key={idx} className="flex items-start text-light-beige/80 font-light text-lg">
+                  <li key={idx} className="flex items-start text-light-beige font-normal text-lg">
                     <span className="w-12 h-[1px] bg-gold/50 mt-4 mr-6 flex-shrink-0"></span>
                     {item}
                   </li>
@@ -92,7 +92,7 @@ export default function AreaDetalhe() {
               className="bg-dark-secondary border border-white/5 p-10 sticky top-32"
              >
                 <h3 className="text-2xl font-serif text-light-beige mb-4">Precisa de assessoria nesta área?</h3>
-                <p className="text-light-beige/50 font-light text-sm mb-8">
+                <p className="text-light-beige/90 font-normal text-sm mb-8">
                   Agende uma consulta de viabilidade jurídica. Garantimos sigilo absoluto e análise minuciosa desde o primeiro contato.
                 </p>
                 <a 

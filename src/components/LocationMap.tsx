@@ -20,7 +20,7 @@ export default function LocationMap() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-light text-light tracking-tight mb-8"
+            className="text-3xl md:text-5xl font-normal text-light tracking-tight mb-8"
           >
             Onde estamos <span className="font-medium text-gradient">localizados</span>
           </motion.h2>
@@ -29,7 +29,7 @@ export default function LocationMap() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-light-dark font-light leading-relaxed text-lg mb-10 max-w-xl"
+            className="text-light-dark font-normal leading-relaxed text-lg mb-10 max-w-xl"
           >
             Possuímos estruturas físicas de alto padrão em pontos estratégicos, além de uma robusta operação digital para atendimento em todo o território nacional.
           </motion.p>
@@ -44,7 +44,7 @@ export default function LocationMap() {
               <div className="absolute top-0 left-0 w-full h-[1px] bg-metal opacity-0 group-hover:opacity-100 transition-opacity" />
               <MapPin className="w-8 h-8 text-metal mb-4" />
               <h3 className="text-xl font-medium text-light mb-2">Juazeiro / BA</h3>
-              <p className="text-sm text-light-dark font-light">Sede Principal com infraestrutura completa para atendimento presencial e corporativo.</p>
+              <p className="text-sm text-light-dark font-normal">Sede Principal com infraestrutura completa para atendimento presencial e corporativo.</p>
             </motion.div>
 
             <motion.div
@@ -57,7 +57,7 @@ export default function LocationMap() {
               <div className="absolute top-0 left-0 w-full h-[1px] bg-metal opacity-0 group-hover:opacity-100 transition-opacity" />
               <MapPin className="w-8 h-8 text-metal mb-4" />
               <h3 className="text-xl font-medium text-light mb-2">João Pessoa / PB</h3>
-              <p className="text-sm text-light-dark font-light">Unidade estratégica focada em contencioso cível, família e demandas previdenciárias.</p>
+              <p className="text-sm text-light-dark font-normal">Unidade estratégica focada em contencioso cível, família e demandas previdenciárias.</p>
             </motion.div>
           </div>
 
@@ -69,7 +69,7 @@ export default function LocationMap() {
             className="mt-8 flex items-center gap-4 p-4 bg-white/5 border border-white/10"
           >
             <Globe className="w-6 h-6 text-metal shrink-0" />
-            <p className="text-sm text-light-dark font-light">
+            <p className="text-sm text-light-dark font-normal">
               <span className="text-light font-medium uppercase tracking-wider text-xs block mb-1">Atendimento 100% Digital</span>
               Atendemos clientes em todo o Brasil e exterior com a mesma proximidade, segurança e eficácia do modelo presencial.
             </p>

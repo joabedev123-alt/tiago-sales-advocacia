@@ -54,16 +54,16 @@ export default function HomeAreas() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl lg:text-5xl font-serif text-light-beige font-light leading-tight mb-8"
+            className="text-4xl lg:text-5xl font-serif text-light-beige font-normal leading-tight mb-8"
           >
-            Nossa <span className="italic text-brown-sophisticated">Expertise</span>
+            Nossa <span className="italic text-brown-sophisticated">especialização</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-light-beige/60 font-light"
+            className="text-light-beige/90 font-normal text-lg"
           >
             Atuamos em áreas críticas onde a precisão técnica e o rigor estratégico são fundamentais para o sucesso.
           </motion.p>
@@ -84,7 +84,7 @@ export default function HomeAreas() {
                 className="w-full flex justify-between items-center p-8 text-left hover:bg-dark-secondary transition-colors"
               >
                 <h3 className="text-2xl font-serif text-light-beige transition-colors">{area.title}</h3>
-                <span className="text-gold text-2xl font-light">{activeArea === area.id ? '−' : '+'}</span>
+                <span className="text-gold text-2xl font-normal">{activeArea === area.id ? '−' : '+'}</span>
               </button>
               
               <AnimatePresence>
@@ -96,21 +96,23 @@ export default function HomeAreas() {
                     className="overflow-hidden"
                   >
                     <div className="p-8 pt-0 border-t border-white/5 mt-4">
-                      <p className="text-light-beige/70 font-light leading-relaxed mb-8">
+                      <p className="text-light-beige font-normal leading-relaxed mb-8 text-lg">
                         {area.desc}
                       </p>
-                      <h4 className="text-gold uppercase tracking-[0.2em] text-xs mb-4 font-semibold">Focos de Atuação</h4>
+                      <h4 className="text-gold uppercase tracking-[0.2em] text-sm mb-4 font-semibold">Focos de Atuação</h4>
                       <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {area.focus.map((item, i) => (
-                          <li key={i} className="flex items-start text-light-beige/60 font-light text-sm">
-                            <span className="w-6 h-[1px] bg-gold/50 mt-2 mr-4 flex-shrink-0"></span>
+                          <li key={i} className="flex items-start text-light-beige/90 font-normal text-base">
+                            <span className="w-6 h-[1px] bg-gold/50 mt-3 mr-4 flex-shrink-0"></span>
                             {item}
                           </li>
                         ))}
                       </ul>
                       <a 
-                        href="https://wa.me/5574999880082" 
-                        className="inline-block mt-8 text-gold uppercase tracking-widest text-[10px] hover:text-white transition-colors"
+                        href={`https://wa.me/5574999880082?text=${encodeURIComponent('Olá! Gostaria de agendar uma consultoria com um especialista na área de ' + area.title + '.')}`} 
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-block mt-10 text-gold uppercase tracking-widest text-xs hover:text-white transition-colors font-semibold"
                       >
                         Agendar Consultoria Específica →
                       </a>

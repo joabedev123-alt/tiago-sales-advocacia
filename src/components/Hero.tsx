@@ -19,10 +19,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            <h1 className="text-5xl lg:text-7xl font-serif text-light-beige font-light leading-[1.1] tracking-wide">
-              Estratégia,<br />
-              <span className="italic text-brown-sophisticated">Exclusividade</span> &<br />
-              Resultados.
+            <h1 className="text-5xl lg:text-6xl font-serif text-light-beige font-normal leading-[1.1] tracking-wide">
+              Compromisso, ética,<br />
+              <span className="italic text-brown-sophisticated">humanidade</span> e resultados.
             </h1>
           </motion.div>
 
@@ -30,9 +29,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="text-light-beige/70 font-sans text-lg max-w-md font-light leading-relaxed"
+            className="text-light-beige font-sans text-xl max-w-2xl font-normal leading-relaxed"
           >
-            Assessoria e consultoria jurídica de alto padrão para decisões complexas. Defendemos seus interesses com precisão técnica e discrição absoluta.
+            Assessoria jurídica completa para causas simples e complexas.<br className="hidden lg:block" /> 
+            Defendemos seus interesses com técnica, profissionalismo e comprometimento absoluto.
           </motion.p>
 
           <motion.div
@@ -45,8 +45,8 @@ export default function Hero() {
               href="https://wa.me/5574999880082" 
               className="relative inline-flex group"
             >
-              <span className="absolute inset-0 rounded-full bg-gold opacity-50 animate-ping group-hover:animate-none duration-1000"></span>
-              <span className="relative inline-flex items-center justify-center bg-gold text-dark px-10 py-5 rounded-full uppercase tracking-widest text-sm font-bold shadow-lg shadow-gold/30 hover:bg-light-beige hover:scale-105 transition-all duration-300">
+              <span className="absolute inset-0 rounded-full bg-gold opacity-20 animate-ping group-hover:animate-none"></span>
+              <span className="relative inline-flex items-center justify-center bg-gold text-dark px-10 py-5 rounded-full uppercase tracking-widest text-sm font-bold shadow-lg shadow-gold/25 hover:bg-gold-hover hover:scale-105 transition-all duration-300">
                 <FaWhatsapp className="w-6 h-6 mr-3 text-dark drop-shadow-sm" />
                 Falar com Especialista
               </span>

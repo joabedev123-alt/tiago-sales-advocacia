@@ -11,7 +11,7 @@ export default function Contato() {
           className="mb-20"
         >
           <span className="text-gold uppercase tracking-[0.4em] text-xs mb-4 block">Atendimento</span>
-          <h1 className="text-5xl lg:text-7xl font-serif text-light-beige font-light">
+          <h1 className="text-5xl lg:text-7xl font-serif text-light-beige font-normal">
             Entre em <span className="italic text-brown-sophisticated">Contato</span>.
           </h1>
         </motion.div>
@@ -25,13 +25,13 @@ export default function Contato() {
           >
             <div>
               <h3 className="text-gold uppercase tracking-[0.2em] text-xs mb-2 font-semibold">Agendamento Exclusivo</h3>
-              <p className="text-light-beige/70 font-light max-w-md">
+              <p className="text-light-beige font-normal max-w-md">
                 Para garantir a excelência e o sigilo de nossos serviços, atendemos mediante agendamento prévio.
               </p>
             </div>
             <div>
               <h3 className="text-gold uppercase tracking-[0.2em] text-xs mb-2 font-semibold">Canais Diretos</h3>
-              <ul className="space-y-4 text-light-beige/70 font-light">
+              <ul className="space-y-4 text-light-beige font-normal">
                 <li className="flex items-center"><span className="w-8 h-[1px] bg-gold/30 mr-4"></span> +55 11 99999-9999</li>
                 <li className="flex items-center"><span className="w-8 h-[1px] bg-gold/30 mr-4"></span> contato@tiagosalesadv.com.br</li>
               </ul>
@@ -51,16 +51,16 @@ export default function Contato() {
           >
             <form className="space-y-6">
               <div>
-                <input type="text" placeholder="Nome Completo" className="w-full bg-dark-secondary/50 border border-white/10 px-6 py-4 text-light-beige font-light focus:outline-none focus:border-gold/50 transition-colors" />
+                <input type="text" placeholder="Nome Completo" className="w-full bg-dark-secondary/50 border border-white/10 px-6 py-4 text-light-beige font-normal focus:outline-none focus:border-gold/50 transition-colors" />
               </div>
               <div>
-                <input type="email" placeholder="E-mail" className="w-full bg-dark-secondary/50 border border-white/10 px-6 py-4 text-light-beige font-light focus:outline-none focus:border-gold/50 transition-colors" />
+                <input type="email" placeholder="E-mail" className="w-full bg-dark-secondary/50 border border-white/10 px-6 py-4 text-light-beige font-normal focus:outline-none focus:border-gold/50 transition-colors" />
               </div>
               <div>
-                <input type="tel" placeholder="Telefone / WhatsApp" className="w-full bg-dark-secondary/50 border border-white/10 px-6 py-4 text-light-beige font-light focus:outline-none focus:border-gold/50 transition-colors" />
+                <input type="tel" placeholder="Telefone / WhatsApp" className="w-full bg-dark-secondary/50 border border-white/10 px-6 py-4 text-light-beige font-normal focus:outline-none focus:border-gold/50 transition-colors" />
               </div>
               <div>
-                <textarea placeholder="Como podemos ajudar?" rows={5} className="w-full bg-dark-secondary/50 border border-white/10 px-6 py-4 text-light-beige font-light focus:outline-none focus:border-gold/50 transition-colors resize-none"></textarea>
+                <textarea placeholder="Como podemos ajudar?" rows={5} className="w-full bg-dark-secondary/50 border border-white/10 px-6 py-4 text-light-beige font-normal focus:outline-none focus:border-gold/50 transition-colors resize-none"></textarea>
               </div>
               <button type="submit" className="w-full border border-gold text-gold px-8 py-4 uppercase tracking-widest text-sm font-semibold hover:bg-gold hover:text-dark transition-colors duration-300">
                 Enviar Mensagem

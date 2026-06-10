@@ -31,7 +31,7 @@ export default function Differentials() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-light text-light tracking-tight mb-8"
+            className="text-3xl md:text-5xl font-normal text-light tracking-tight mb-8"
           >
             Excelência em cada <span className="font-medium text-gradient">detalhe</span>
           </motion.h2>
@@ -39,7 +39,7 @@ export default function Differentials() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-light-dark font-light leading-relaxed text-lg mb-10 max-w-xl"
+            className="text-light-dark font-normal leading-relaxed text-lg mb-10 max-w-xl"
           >
             Não somos apenas um escritório de advocacia. Somos parceiros estratégicos comprometidos com a defesa incansável dos seus interesses, unindo inteligência jurídica e sensibilidade humana.
           </motion.p>
@@ -73,7 +73,7 @@ export default function Differentials() {
                 <div className="w-6 h-6 rounded-full border border-white/10 flex items-center justify-center shrink-0 bg-white/[0.02]">
                   <Check className="w-3 h-3 text-metal" />
                 </div>
-                <span className="text-light text-sm tracking-wide font-light">{item}</span>
+                <span className="text-light text-sm tracking-wide font-normal">{item}</span>
               </motion.div>
             ))}
           </div>

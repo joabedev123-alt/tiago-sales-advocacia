@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const links = [
-  { name: 'Home', path: '#home' },
+  { name: 'HOME', path: '#home' },
   { name: 'Sobre', path: '#sobre' },
   { name: 'Áreas de Atuação', path: '#areas' },
   { name: 'Blog', path: '#blog' },
@@ -13,14 +13,11 @@ const links = [
 ];
 
 export default function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('#home');
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-      
       // Update active section based on scroll
       const sections = links.map(link => link.path.substring(1));
       let current = '';
@@ -50,13 +47,8 @@ export default function Header() {
   };
 
   return (
-    <header
-      className={clsx(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
-        isScrolled ? 'bg-dark/90 backdrop-blur-md border-b border-white/5 py-4' : 'bg-transparent py-6'
-      )}
-    >
-      <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center">
+    <header className="absolute top-0 w-full z-50 bg-transparent py-8 transition-all duration-500">
+      <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center relative">
         {/* Logo */}
         <button onClick={() => scrollTo('#home')} className="z-50 relative group flex items-center h-20 md:h-24 ml-4 lg:ml-12">
           <img 
@@ -67,14 +59,14 @@ export default function Header() {
         </button>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center space-x-8">
           {links.map((link) => (
             <button
               key={link.path}
               onClick={() => scrollTo(link.path)}
               className={clsx(
-                'text-sm uppercase tracking-widest transition-all duration-300 font-light hover:text-gold relative',
-                activeSection === link.path ? 'text-gold' : 'text-light-beige/70'
+                'text-sm uppercase tracking-widest transition-all duration-300 font-normal hover:text-gold relative',
+                activeSection === link.path ? 'text-gold' : 'text-light-beige'
               )}
             >
               {link.name}
