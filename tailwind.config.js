@@ -30,7 +30,7 @@ export default {
       },
       fontFamily: {
         sans: ['Avenir Next Condensed', 'Barlow Condensed', 'Avenir Next', 'Avenir', 'Helvetica Neue', 'sans-serif'],
-        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        serif: ['Avenir Next Condensed', 'Barlow Condensed', 'Avenir Next', 'Avenir', 'Helvetica Neue', 'sans-serif'],
       },
     },
   },

@@ -10,7 +10,7 @@ export default function Hero() {
         </span>
       </div>
 
-      <div className="container mx-auto px-6 lg:px-12 relative z-10 flex flex-col lg:flex-row items-center justify-between min-h-screen pt-24 lg:pt-0">
+      <div className="container mx-auto px-6 lg:px-12 relative z-10 flex flex-col lg:flex-row items-center justify-between min-h-screen pt-24 lg:pt-14">
         
         {/* Text Content */}
         <div className="w-full lg:w-5/12 flex flex-col items-start justify-center space-y-8">
