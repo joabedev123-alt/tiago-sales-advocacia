@@ -25,24 +25,24 @@ const differentials = [
 
 export default function HomeDifferentials() {
   return (
-    <section className="py-16 md:py-24 bg-dark-alternate relative overflow-hidden">
-      <div className="container mx-auto px-5 lg:px-12 relative z-10">
-        <div className="flex flex-col items-center justify-center text-center mb-12 md:mb-16">
+    <section className="py-16 md:py-32 lg:py-48 min-h-screen flex flex-col justify-center bg-dark-alternate relative overflow-hidden">
+      <div className="container mx-auto px-6 lg:px-12 relative z-10">
+        <div className="flex flex-col items-center justify-center text-center mb-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="max-w-2xl mx-auto"
+            className="max-w-3xl mx-auto"
           >
-            <span className="text-gold uppercase tracking-[0.4em] text-xs mb-4 block">Nossos Pilares</span>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-light-beige font-normal leading-tight">
+            <span className="text-gold uppercase tracking-[0.4em] text-sm mb-4 block">Nossos Pilares</span>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif text-light-beige font-normal leading-tight">
               A diferença entre um serviço comum e a <span className="italic text-brown-sophisticated">excelência absoluta</span>.
             </h2>
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-24 lg:gap-x-40">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 md:gap-y-24">
           {differentials.map((diff, idx) => (
             <motion.div
               key={idx}
@@ -50,13 +50,13 @@ export default function HomeDifferentials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: idx * 0.1 }}
-              className="relative pl-8 md:pl-16 py-6 border-l-2 border-white/10 hover:border-gold hover:bg-white/[0.03] transition-all duration-500 group rounded-r-xl"
+              className="relative pl-5 md:pl-16 py-6 md:py-8 border-l-2 border-white/10 hover:border-gold hover:bg-white/[0.03] transition-all duration-500 group rounded-r-xl"
             >
-              <span className="absolute left-[-10px] top-6 text-4xl md:text-6xl font-serif text-white/30 group-hover:text-gold group-hover:-translate-x-[110%] transition-all duration-500 -translate-x-full">
+              <span className="hidden md:block absolute left-[-10px] top-6 text-5xl md:text-6xl font-serif text-white/30 group-hover:text-gold group-hover:-translate-x-[110%] transition-all duration-500 -translate-x-full">
                 {diff.number}
               </span>
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-serif text-light-beige mb-3 group-hover:text-gold transition-colors">{diff.title}</h3>
-              <p className="text-light-beige/90 font-normal leading-relaxed text-base md:text-lg group-hover:text-white transition-colors">
+              <h3 className="text-xl md:text-3xl font-serif text-light-beige mb-3 md:mb-4 group-hover:text-gold transition-colors">{diff.title}</h3>
+              <p className="text-light-beige/90 font-normal leading-relaxed text-sm md:text-lg group-hover:text-white transition-colors">
                 {diff.desc}
               </p>
             </motion.div>

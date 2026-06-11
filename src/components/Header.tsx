@@ -14,13 +14,13 @@ const links = [
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('#home');
-  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      // Update active section based on scroll
       const sections = links.map(link => link.path.substring(1));
       let current = '';
+      
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element && window.scrollY >= (element.offsetTop - 200)) {
@@ -29,6 +29,7 @@ export default function Header() {
       }
       if (current) setActiveSection(current);
     };
+    
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -37,33 +38,33 @@ export default function Header() {
     setMobileMenuOpen(false);
     const element = document.getElementById(hash.substring(1));
     if (element) {
-      window.scrollTo({ top: element.offsetTop - 80, behavior: 'smooth' });
+      window.scrollTo({
+        top: element.offsetTop - 80,
+        behavior: 'smooth'
+      });
     }
   };
 
   return (
-    <header className={clsx(
-      'fixed top-0 w-full z-50 transition-all duration-500 py-4 md:py-6',
-      scrolled ? 'bg-dark/95 backdrop-blur-sm shadow-lg shadow-black/20' : 'bg-transparent'
-    )}>
-      <div className="container mx-auto px-5 lg:px-12 flex justify-between items-center">
+    <header className="absolute top-0 w-full z-50 bg-transparent py-8 transition-all duration-500">
+      <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center relative">
         {/* Logo */}
-        <button onClick={() => scrollTo('#home')} className="z-50 relative flex items-center h-16 sm:h-20 md:h-28">
+        <button onClick={() => scrollTo('#home')} className="z-50 relative group flex items-center h-14 sm:h-20 md:h-36 ml-2 lg:ml-12">
           <img 
             src="/logo%20original.png" 
             alt="Tiago Sales Advocacia" 
-            className="h-full w-auto object-contain"
+            className="h-full w-auto object-contain transform origin-left"
           />
         </button>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
+        <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center space-x-8">
           {links.map((link) => (
             <button
               key={link.path}
               onClick={() => scrollTo(link.path)}
               className={clsx(
-                'text-sm uppercase tracking-widest transition-all duration-300 font-normal hover:text-gold relative',
+                'text-base uppercase tracking-widest transition-all duration-300 font-normal hover:text-gold relative',
                 activeSection === link.path ? 'text-gold' : 'text-light-beige'
               )}
             >
@@ -76,25 +77,15 @@ export default function Header() {
               )}
             </button>
           ))}
+          
         </nav>
-
-        {/* WhatsApp CTA - desktop */}
-        <a
-          href="https://wa.me/5574999880082"
-          target="_blank"
-          rel="noreferrer"
-          className="hidden md:inline-flex items-center gap-2 bg-gold text-dark text-xs font-bold uppercase tracking-widest px-5 py-2.5 rounded-full hover:bg-gold-hover transition-all duration-300"
-        >
-          Falar Agora
-        </a>
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-light-beige z-50 relative p-2"
+          className="md:hidden text-light-beige z-50 relative"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Menu"
         >
-          {mobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
+          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
@@ -102,41 +93,23 @@ export default function Header() {
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
+            initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.25 }}
-            className="fixed inset-0 bg-dark/98 backdrop-blur-md z-40 flex flex-col items-center justify-center space-y-6 px-8"
+            exit={{ opacity: 0, y: -20 }}
+            className="fixed inset-0 bg-dark z-40 flex flex-col items-center justify-center space-y-8"
           >
-            {/* Logo no menu mobile */}
-            <img 
-              src="/logo%20original.png" 
-              alt="Tiago Sales Advocacia" 
-              className="h-20 w-auto object-contain mb-6 opacity-80"
-            />
-
             {links.map((link) => (
               <button
                 key={link.path}
                 onClick={() => scrollTo(link.path)}
                 className={clsx(
-                  'text-2xl font-serif tracking-widest uppercase transition-colors py-1',
-                  activeSection === link.path ? 'text-gold' : 'text-light-beige hover:text-gold'
+                  'text-3xl font-serif tracking-widest uppercase transition-colors',
+                  activeSection === link.path ? 'text-gold' : 'text-light-beige'
                 )}
               >
                 {link.name}
               </button>
             ))}
-
-            {/* WhatsApp CTA mobile */}
-            <a
-              href="https://wa.me/5574999880082"
-              target="_blank"
-              rel="noreferrer"
-              className="mt-6 inline-flex items-center gap-2 bg-gold text-dark text-sm font-bold uppercase tracking-widest px-8 py-4 rounded-full"
-            >
-              Falar pelo WhatsApp
-            </a>
           </motion.div>
         )}
       </AnimatePresence>

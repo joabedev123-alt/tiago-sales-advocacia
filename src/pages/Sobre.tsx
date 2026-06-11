@@ -2,20 +2,20 @@ import { motion } from 'framer-motion';
 
 export default function Sobre() {
   return (
-    <section id="sobre" className="py-16 md:py-24 px-5 lg:px-12 bg-dark border-t border-white/5">
+    <section id="sobre" className="py-24 md:py-24 px-6 lg:px-12 bg-dark border-t border-white/5">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="max-w-5xl mx-auto text-center"
+          className="max-w-7xl mx-auto text-center"
         >
-          <span className="text-gold uppercase tracking-[0.4em] text-xs mb-4 block">Sobre Nós</span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-light-beige font-normal mb-8 md:mb-12 leading-tight">
+          <span className="text-gold uppercase tracking-[0.4em] text-sm mb-4 block">Sobre Nós</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-light-beige font-normal mb-12">
             Excelência Jurídica com <span className="italic text-brown-sophisticated">Atendimento Personalizado</span>.
           </h2>
-          <div className="space-y-5 text-light-beige font-sans text-base sm:text-lg md:text-xl font-normal leading-relaxed text-left md:text-center">
+          <div className="space-y-6 text-light-beige font-sans text-base md:text-xl lg:text-2xl font-normal leading-relaxed text-justify md:text-center">
             <p>
               Tiago Sales Advocacia é um escritório dedicado à prestação de assessoria, consultoria e representação judicial para pessoas físicas e jurídicas, oferecendo soluções seguras, estratégicas e eficientes para as mais diversas demandas.
             </p>
