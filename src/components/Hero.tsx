@@ -19,7 +19,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            <h1 className="text-2xl md:text-4xl lg:text-xl md:text-5xl lg:text-7xl font-serif text-light-beige font-normal leading-[1.1] tracking-wide">
+            <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-serif text-light-beige font-normal leading-[1.1] tracking-wide">
               Soluções jurídicas completas para proteger seus direitos e interesses.
             </h1>
           </motion.div>
@@ -57,7 +57,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full lg:w-5/12 mt-16 lg:mt-0 relative h-[50vh] lg:h-[65vh]"
+          className="w-full lg:w-5/12 mt-20 lg:mt-24 relative h-[50vh] lg:h-[65vh]"
         >
           {/* Editorial Decorative Lines */}
           <div className="absolute -top-4 -left-4 w-24 h-24 border-t border-l border-gold/30 z-20"></div>
