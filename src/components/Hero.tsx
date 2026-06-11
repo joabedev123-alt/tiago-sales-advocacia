@@ -44,7 +44,7 @@ export default function Hero() {
               className="relative inline-flex group"
             >
               <span className="absolute inset-0 rounded-full bg-gold opacity-20 animate-ping group-hover:animate-none"></span>
-              <span className="relative inline-flex items-center justify-center bg-gold text-dark px-10 py-5 rounded-full uppercase tracking-widest text-base font-bold shadow-lg shadow-gold/25 hover:bg-gold-hover hover:scale-105 transition-all duration-300">
+              <span className="relative inline-flex items-center justify-center bg-gold text-dark px-7 md:px-10 py-4 md:py-5 rounded-full uppercase tracking-wider md:tracking-widest text-sm md:text-base font-bold shadow-lg shadow-gold/25 hover:bg-gold-hover hover:scale-105 transition-all duration-300">
                 <FaWhatsapp className="w-6 h-6 mr-3 text-dark drop-shadow-sm" />
                 Falar com Especialista
               </span>

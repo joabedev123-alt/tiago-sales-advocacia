@@ -40,7 +40,7 @@ export default function HomeAreas() {
   return (
     <section id="areas" className="py-16 md:py-32 lg:py-48 min-h-screen flex flex-col justify-center bg-dark-secondary relative border-t border-white/5">
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-20">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-20">
           <motion.span 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -63,7 +63,7 @@ export default function HomeAreas() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-light-beige/90 font-normal text-xl"
+            className="text-light-beige/90 font-normal text-sm md:text-xl"
           >
             Atuamos em áreas críticas onde a precisão técnica e o rigor estratégico são fundamentais para o sucesso.
           </motion.p>

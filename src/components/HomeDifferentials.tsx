@@ -27,7 +27,7 @@ export default function HomeDifferentials() {
   return (
     <section className="py-16 md:py-32 lg:py-48 min-h-screen flex flex-col justify-center bg-dark-alternate relative overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
-        <div className="flex flex-col items-center justify-center text-center mb-20">
+        <div className="flex flex-col items-center justify-center text-center mb-10 md:mb-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

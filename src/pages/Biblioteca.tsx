@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function Biblioteca() {
   return (
-    <section id="atendimento" className="py-20 md:py-20 px-6 lg:px-12 bg-dark border-t border-white/5 relative overflow-hidden">
+    <section id="atendimento" className="py-12 md:py-20 px-6 lg:px-12 bg-dark border-t border-white/5 relative overflow-hidden">
       <div className="absolute top-0 right-0 w-1/3 h-full bg-dark-secondary/30 pointer-events-none"></div>
       
       <div className="container mx-auto text-center relative z-10">
@@ -17,9 +17,9 @@ export default function Biblioteca() {
           <div className="absolute top-[-20%] left-[-10%] w-96 h-96 bg-gold/20 blur-[120px] rounded-full pointer-events-none"></div>
 
           <span className="relative z-10 text-gold uppercase tracking-[0.4em] text-base mb-6 block font-bold">Nossa Cobertura</span>
-          <h2 className="relative z-10 text-3xl md:text-4xl lg:text-5xl font-serif text-light-beige font-normal leading-snug mb-10">
+          <h2 className="relative z-10 text-2xl md:text-4xl lg:text-5xl font-serif text-light-beige font-normal leading-snug mb-8 md:mb-10">
             Atendimento presencial em <span className="text-gold font-bold">Juazeiro/BA</span> e <span className="text-gold font-bold">João Pessoa/PB</span>.{' '}
-            <span className="inline-block mt-4 md:mt-0 bg-gold/15 px-4 py-2 rounded text-gold border border-gold/30 italic font-bold shadow-md ml-0 md:ml-2">Atendimento online em todo o território nacional.</span>
+            <span className="block md:inline-block mt-4 md:mt-0 bg-gold/15 px-3 md:px-4 py-2 rounded text-gold border border-gold/30 italic font-bold shadow-md ml-0 md:ml-2 text-xl md:text-3xl lg:text-4xl">Atendimento online em todo o território nacional.</span>
           </h2>
           
           <a 
