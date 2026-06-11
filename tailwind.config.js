@@ -29,8 +29,8 @@ export default {
         'gradient-logo': 'linear-gradient(90deg, #011155 0%, #13276E 50%, #6D6E9A 100%)',
       },
       fontFamily: {
-        sans: ['Avenir Next Condensed', 'Avenir', 'Helvetica Neue', 'sans-serif'],
-        serif: ['"Cormorant Garamond"', 'serif'],
+        sans: ['Avenir Next Condensed', 'Barlow Condensed', 'Avenir Next', 'Avenir', 'Helvetica Neue', 'sans-serif'],
+        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
       },
     },
   },
