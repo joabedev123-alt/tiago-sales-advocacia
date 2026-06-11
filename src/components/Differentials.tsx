@@ -14,7 +14,7 @@ const differentials = [
 
 export default function Differentials() {
   return (
-    <section className="py-24 md:py-48 min-h-screen flex flex-col justify-center bg-primary-secundary border-y border-white/5 relative overflow-hidden">
+    <section className="py-24 md:py-24 bg-primary-secundary border-y border-white/5 relative overflow-hidden">
       <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_at_center,rgba(200,200,200,0.03)_0%,rgba(0,0,0,0)_70%)] pointer-events-none" />
       
       <div className="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-16">

@@ -8,7 +8,6 @@ import SplashScreen from './components/SplashScreen';
 import Sobre from './pages/Sobre';
 import HomeDifferentials from './components/HomeDifferentials';
 import HomeAreas from './components/HomeAreas';
-
 import Biblioteca from './pages/Biblioteca';
 import HomeContact from './components/HomeContact';
 
@@ -33,7 +32,6 @@ function App() {
         <Sobre />
         <HomeDifferentials />
         <HomeAreas />
-
         <Biblioteca />
         <HomeContact />
       </div>

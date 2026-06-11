@@ -29,7 +29,7 @@ export default function Blog() {
   const [activeArticle, setActiveArticle] = useState<number | null>(null);
 
   return (
-    <section id="blog" className="py-24 md:py-48 min-h-screen flex flex-col justify-center px-6 lg:px-12 bg-dark">
+    <section id="blog" className="py-24 md:py-24 px-6 lg:px-12 bg-dark">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

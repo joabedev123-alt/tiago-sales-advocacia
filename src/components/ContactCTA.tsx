@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function ContactCTA() {
   return (
-    <section className="py-24 md:py-48 min-h-screen flex flex-col justify-center bg-primary relative overflow-hidden">
+    <section className="py-24 md:py-24 bg-primary relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(200,200,200,0.08)_0%,rgba(0,0,0,1)_70%)]" />
       
       <div className="container mx-auto px-6 lg:px-12 relative z-10 text-center max-w-4xl">

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function AboutIntro() {
   return (
-    <section className="py-24 md:py-48 min-h-screen flex flex-col justify-center bg-primary relative border-t border-white/5">
+    <section className="py-24 md:py-24 bg-primary relative border-t border-white/5">
       <div className="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
         
         {/* Imagem Premium Institucional */}

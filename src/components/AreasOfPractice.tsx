@@ -58,7 +58,7 @@ const itemVariants = {
 
 export default function AreasOfPractice() {
   return (
-    <section className="py-24 md:py-48 min-h-screen flex flex-col justify-center bg-primary relative">
+    <section className="py-24 md:py-24 bg-primary relative">
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       
       <div className="container mx-auto px-6 lg:px-12">

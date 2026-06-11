@@ -38,14 +38,14 @@ export default function HomeAreas() {
   const [activeArea, setActiveArea] = useState<string | null>(null);
 
   return (
-    <section id="areas" className="py-24 md:py-48 min-h-screen flex flex-col justify-center bg-dark-secondary relative border-t border-white/5">
-      <div className="container mx-auto px-6 lg:px-12 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-20">
+    <section id="areas" className="py-16 md:py-24 bg-dark-secondary relative border-t border-white/5">
+      <div className="container mx-auto px-5 lg:px-12 relative z-10">
+        <div className="text-center max-w-2xl mx-auto mb-10 md:mb-16">
           <motion.span 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-gold uppercase tracking-[0.4em] text-sm mb-4 block"
+            className="text-gold uppercase tracking-[0.4em] text-xs mb-3 block"
           >
             Áreas de Atuação
           </motion.span>
@@ -54,22 +54,22 @@ export default function HomeAreas() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-serif text-light-beige font-normal leading-tight mb-8"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-light-beige font-normal leading-tight mb-5"
           >
-            Nossa <span className="italic text-brown-sophisticated">especialização</span>
+            Nossas <span className="italic text-brown-sophisticated">Especializações</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-light-beige/90 font-normal text-xl"
+            className="text-light-beige/90 font-normal text-base md:text-lg"
           >
             Atuamos em áreas críticas onde a precisão técnica e o rigor estratégico são fundamentais para o sucesso.
           </motion.p>
         </div>
 
-        <div className="space-y-4 max-w-5xl mx-auto">
+        <div className="space-y-3 max-w-4xl mx-auto">
           {areaData.map((area, idx) => (
             <motion.div
               key={area.id}
@@ -81,10 +81,10 @@ export default function HomeAreas() {
             >
               <button
                 onClick={() => setActiveArea(activeArea === area.id ? null : area.id)}
-                className="w-full flex justify-between items-center p-8 text-left hover:bg-dark-secondary transition-colors"
+                className="w-full flex justify-between items-center p-5 md:p-8 text-left hover:bg-dark-secondary transition-colors"
               >
-                <h3 className="text-xl md:text-3xl font-serif font-bold text-light-beige transition-colors">{area.title}</h3>
-                <span className="text-gold text-xl md:text-3xl font-normal">{activeArea === area.id ? '−' : '+'}</span>
+                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-serif font-bold text-light-beige transition-colors pr-4">{area.title}</h3>
+                <span className="text-gold text-2xl md:text-3xl font-normal flex-shrink-0">{activeArea === area.id ? '−' : '+'}</span>
               </button>
               
               <AnimatePresence>
@@ -95,15 +95,15 @@ export default function HomeAreas() {
                     exit={{ height: 0, opacity: 0 }}
                     className="overflow-hidden"
                   >
-                    <div className="p-8 pt-0 border-t border-white/5 mt-4">
-                      <p className="text-light-beige font-normal leading-relaxed mb-8 text-xl whitespace-pre-line">
+                    <div className="p-5 md:p-8 pt-0 border-t border-white/5 mt-3">
+                      <p className="text-light-beige font-normal leading-relaxed mb-6 text-base md:text-lg whitespace-pre-line">
                         {area.desc}
                       </p>
-                      <h4 className="text-gold uppercase tracking-[0.2em] text-base mb-4 font-semibold">Focos de Atuação</h4>
-                      <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <h4 className="text-gold uppercase tracking-[0.2em] text-xs md:text-sm mb-4 font-semibold">Focos de Atuação</h4>
+                      <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         {area.focus.map((item, i) => (
-                          <li key={i} className="flex items-start text-light-beige/90 font-normal text-lg">
-                            <span className="w-6 h-[1px] bg-gold/50 mt-3 mr-4 flex-shrink-0"></span>
+                          <li key={i} className="flex items-start text-light-beige/90 font-normal text-sm md:text-base">
+                            <span className="w-5 h-[1px] bg-gold/50 mt-3 mr-3 flex-shrink-0"></span>
                             {item}
                           </li>
                         ))}
@@ -112,7 +112,7 @@ export default function HomeAreas() {
                         href={`https://wa.me/5574999880082?text=${encodeURIComponent('Olá! Gostaria de agendar uma consultoria com um especialista na área de ' + area.title + '.')}`} 
                         target="_blank"
                         rel="noreferrer"
-                        className="inline-block mt-10 text-gold uppercase tracking-widest text-sm hover:text-white transition-colors font-semibold"
+                        className="inline-block mt-8 text-gold uppercase tracking-widest text-xs hover:text-white transition-colors font-semibold"
                       >
                         Agendar Consultoria Específica →
                       </a>
