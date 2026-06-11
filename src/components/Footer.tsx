@@ -29,10 +29,10 @@ export default function Footer() {
               <img 
                 src="/logo original.png" 
                 alt="Tiago Sales Advocacia" 
-                className="h-20 md:h-24 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity transform origin-left"
+                className="h-32 md:h-48 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity transform origin-left"
               />
             </a>
-            <p className="text-light-beige/90 font-sans text-base font-normal leading-relaxed max-w-xs mb-6">
+            <p className="text-light-beige/90 font-sans text-lg font-normal leading-relaxed max-w-xs mb-6">
               Assessoria jurídica de excelência. Estratégia, exclusividade e resultados para as decisões mais complexas da sua vida ou do seu negócio.
             </p>
             <div className="flex space-x-4">
@@ -57,15 +57,14 @@ export default function Footer() {
 
           {/* Links: Institucional */}
           <div>
-            <h4 className="text-gold uppercase tracking-[0.2em] text-sm mb-4 font-semibold">Institucional</h4>
+            <h4 className="text-gold uppercase tracking-[0.2em] text-base mb-4 font-semibold">Institucional</h4>
             <ul className="space-y-3">
               {[
                 { name: 'HOME', path: '#home' },
-                { name: 'Sobre Nós', path: '#sobre' },
-                { name: 'Blog Jurídico', path: '#blog' }
+                { name: 'Sobre Nós', path: '#sobre' }
               ].map((item) => (
                 <li key={item.name}>
-                  <a href={item.path} onClick={(e) => scrollTo(e, item.path)} className="text-light-beige hover:text-gold transition-colors text-base font-normal tracking-wide">
+                  <a href={item.path} onClick={(e) => scrollTo(e, item.path)} className="text-light-beige hover:text-gold transition-colors text-lg font-normal tracking-wide">
                     {item.name}
                   </a>
                 </li>
@@ -75,15 +74,15 @@ export default function Footer() {
 
           {/* Links: Áreas de Atuação */}
           <div>
-            <h4 className="text-gold uppercase tracking-[0.2em] text-sm mb-4 font-semibold">Especialização</h4>
+            <h4 className="text-gold uppercase tracking-[0.2em] text-base mb-4 font-semibold">Especialização</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#areas" onClick={(e) => scrollTo(e, '#areas')} className="text-light-beige hover:text-gold transition-colors text-base font-normal tracking-wide">
+                <a href="#areas" onClick={(e) => scrollTo(e, '#areas')} className="text-light-beige hover:text-gold transition-colors text-lg font-normal tracking-wide">
                   Áreas de Atuação
                 </a>
               </li>
               <li>
-                <a href="#atendimento" onClick={(e) => scrollTo(e, '#atendimento')} className="text-light-beige hover:text-gold transition-colors text-base font-normal tracking-wide">
+                <a href="#atendimento" onClick={(e) => scrollTo(e, '#atendimento')} className="text-light-beige hover:text-gold transition-colors text-lg font-normal tracking-wide">
                   Cobertura de Atendimento
                 </a>
               </li>
@@ -92,19 +91,19 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-gold uppercase tracking-[0.2em] text-sm mb-4 font-semibold">Contato</h4>
-            <ul className="space-y-4 text-base font-normal tracking-wide text-light-beige">
+            <h4 className="text-gold uppercase tracking-[0.2em] text-base mb-4 font-semibold">Contato</h4>
+            <ul className="space-y-4 text-lg font-normal tracking-wide text-light-beige">
               <li>
                 <span className="block text-gold/60 text-[11px] uppercase tracking-widest mb-1">WhatsApp / Fone</span>
                 (74) 99988-0082
               </li>
               <li>
                 <span className="block text-gold/60 text-[11px] uppercase tracking-widest mb-1">E-mail</span>
-                contato@tiagosalesadv.com.br
+                adv.tiagosales@gmail.com
               </li>
               <li>
                 <span className="block text-gold/60 text-[11px] uppercase tracking-widest mb-1">Endereço</span>
-                Atendimento presencial em Juazeiro/BA e João Pessoa. <span className="text-gold font-semibold ml-1">Atendimento online em todo o território nacional.</span>
+                Atendimento presencial em Juazeiro/BA e João Pessoa/PB. <span className="text-gold font-semibold ml-1">Atendimento online em todo o território nacional.</span>
               </li>
             </ul>
           </div>
@@ -112,22 +111,22 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-center md:text-left">
-          <p className="text-light-beige/70 text-xs tracking-wide md:w-1/3">
+          <p className="text-light-beige/70 text-sm tracking-wide md:w-1/3">
             &copy; {new Date().getFullYear()} Tiago Sales Advocacia.<br className="hidden md:block" /> Todos os direitos reservados.
           </p>
           
           <div className="text-light-beige text-[11px] tracking-widest uppercase md:w-1/3 md:text-center">
-            Produzida com <span className="text-gold text-sm">♥</span> por{' '}
+            Produzida com <span className="text-gold text-base">♥</span> por{' '}
             <a href="https://camaly.com.br/" target="_blank" rel="noreferrer" className="text-gold hover:text-gold-hover transition-colors font-semibold">
               CAMALY
             </a>
           </div>
 
           <div className="flex space-x-6 md:w-1/3 justify-center md:justify-end">
-            <a href="#home" className="text-light-beige/70 hover:text-gold text-xs tracking-wide transition-colors">
+            <a href="#home" className="text-light-beige/70 hover:text-gold text-sm tracking-wide transition-colors">
               Privacidade
             </a>
-            <a href="#home" className="text-light-beige/70 hover:text-gold text-xs tracking-wide transition-colors">
+            <a href="#home" className="text-light-beige/70 hover:text-gold text-sm tracking-wide transition-colors">
               Termos
             </a>
           </div>

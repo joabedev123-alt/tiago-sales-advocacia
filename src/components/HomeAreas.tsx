@@ -5,32 +5,32 @@ const areaData = [
   {
     id: 'familia',
     title: 'Direito de Família',
-    desc: 'Em questões que envolvem o patrimônio afetivo e material de uma vida inteira, a abordagem artesanal e o sigilo são indispensáveis. Nosso escritório atua em litígios familiares e planejamentos sucessórios com máxima discrição, buscando soluções que preservem as relações e garantam a justa distribuição de direitos.',
-    focus: ['Divórcios Litigiosos e Consensuais de Alta Complexidade', 'Partilha de Bens e Avaliação de Empresas em Divórcios', 'Planejamento Sucessório e Inventários', 'Guarda, Pensão Alimentícia e Alienação Parental']
+    desc: 'Em questões que envolvem o patrimônio afetivo e material de uma vida inteira, a abordagem artesanal e o sigilo são indispensáveis. Nosso escritório atua em litígios familiares e planejamentos sucessórios com descrição máxima, buscando soluções que preservem as relações e garantam a justa distribuição de direitos.',
+    focus: ['Divórcios Litigiosos e Consensuais de Alta Complexidade', 'Partilha de Bens e Avaliação de Empresas em Divórcios', 'Planejamento Sucessório e Inventários', 'Guarda, Pensão Alimentar e Alienação Parental']
   },
   {
     id: 'previdenciario',
     title: 'Direito Previdenciário',
-    desc: 'O planejamento do seu futuro não pode ficar à mercê de burocracias do Estado. Atuamos com inteligência estratégica para mapear, antecipar e garantir o melhor cenário de aposentadoria ou benefício, focando em executivos, empresários e profissionais liberais.',
-    focus: ['Planejamento Previdenciário Estratégico', 'Revisão de Benefícios de Alta Complexidade', 'Aposentadoria Especial e por Idade', 'Ações contra o INSS para concessão e restabelecimento']
+    desc: 'O acesso aos benefícios previdenciários exige planejamento, conhecimento técnico e acompanhamento especializado. Nosso escritório atua na orientação e representação de segurados perante o INSS e o Poder Judiciário, buscando garantir a concessão, revisão e manutenção de benefícios de forma segura e eficiente.\n\nCom atuação estratégica e análise individualizada de cada caso, trabalhamos para assegurar que nossos clientes obtenham o melhor enquadramento previdenciário possível, protegendo seus direitos e proporcionando maior segurança para o futuro.',
+    focus: ['Aposentadorias', 'Benefício Assistencial (BPC/LOAS)', 'Benefício por Incapacidade Temporária (Auxílio-Doença)', 'Pensão por Morte', 'Salário-Maternidade']
   },
   {
     id: 'consumidor',
     title: 'Direito do Consumidor',
-    desc: 'Defendemos pessoas físicas e jurídicas contra abusos corporativos. Com rigor técnico e firmeza de atuação, buscamos o equilíbrio nas relações de consumo, exigindo o cumprimento de ofertas, a reparação por vícios em produtos premium e o combate a contratos abusivos.',
-    focus: ['Responsabilidade Civil por Danos em Serviços de Luxo', 'Atraso e Distrato na Compra de Imóveis', 'Fraudes Bancárias e Restituição de Valores', 'Planos de Saúde: Negativas de Tratamentos']
+    desc: 'Defendemos os direitos de consumidores diante de práticas abusivas, falhas na prestação de serviços e descumprimento de obrigações contratuais. Com atuação técnica e estratégica, buscamos o equilíbrio nas relações de consumo, promovendo a reparação de prejuízos e a efetiva proteção dos direitos de nossos clientes.\n\nNossa atuação é pautada pela análise criteriosa de cada caso, buscando soluções eficientes tanto na esfera extrajudicial quanto judicial, sempre com foco na obtenção dos melhores resultados.',
+    focus: ['Indenizações por Danos Materiais e Morais', 'Falha na Prestação de Serviços', 'Vícios e Defeitos em Produtos', 'Descumprimento de Oferta', 'Cobranças Indevidas e Negativação Indevida', 'Direito do Passageiro Aéreo']
   },
   {
     id: 'contratos',
-    title: 'Contratos Complexos',
-    desc: 'A blindagem de um negócio começa no instrumento que o formaliza. Desenvolvemos, revisamos e negociamos contratos complexos com visão de longo prazo, mitigando riscos e estabelecendo regras claras que protegem o patrimônio dos nossos clientes.',
-    focus: ['Contratos Empresariais e Acordos de Sócios', 'Contratos Imobiliários de Alto Valor', 'Due Diligence Contratual', 'Resolução Estratégica de Conflitos Contratuais']
+    title: 'Contratos',
+    desc: 'A segurança jurídica de qualquer relação começa com um contrato bem elaborado. Nosso escritório atua na elaboração, análise, revisão e negociação de instrumentos contratuais, buscando prevenir conflitos, reduzir riscos e proteger os interesses de nossos clientes.\n\nCom atenção aos detalhes e visão estratégica, desenvolvemos contratos claros, equilibrados e juridicamente seguros, adequados às particularidades de cada negócio, operação ou relação jurídica.',
+    focus: ['Elaboração e Revisão de Contratos', 'Contratos de Prestação de Serviços', 'Contratos de Compra e Venda', 'Contratos de Locação', 'Instrumentos de Confissão de Dívida', 'Notificações Extrajudiciais']
   },
   {
     id: 'indenizacoes',
     title: 'Ações Indenizatórias',
-    desc: 'A reparação de danos exige precisão na quantificação e agressividade técnica na busca pelos direitos lesados. Atuamos em litígios complexos visando a máxima reparação financeira por danos materiais, morais, estéticos ou existenciais.',
-    focus: ['Indenizações por Erro Médico', 'Danos Patrimoniais Complexos', 'Responsabilidade Civil de Empresas', 'Ações Indenizatórias de Alto Valor']
+    desc: 'Quando um direito é violado, a reparação adequada dos prejuízos torna-se essencial para restabelecer o equilíbrio e a justiça. Nosso escritório atua na defesa de pessoas físicas e jurídicas em demandas indenizatórias, buscando a responsabilização dos causadores do dano e a justa compensação pelos prejuízos sofridos.\n\nCom atuação técnica e análise criteriosa de cada caso, trabalhamos para assegurar a reparação de danos materiais, morais, estéticos, lucros cessantes e outras modalidades de prejuízo reconhecidas pela legislação e pela jurisprudência.',
+    focus: ['Indenizações por Danos Morais, Materiais, Estéticos e Lucro Cessantes', 'Responsabilidade Civil por Acidentes', 'Erro Médico e Responsabilidade Hospitalar', 'Acidentes de Trânsito']
   }
 ];
 
@@ -38,14 +38,14 @@ export default function HomeAreas() {
   const [activeArea, setActiveArea] = useState<string | null>(null);
 
   return (
-    <section id="areas" className="py-32 bg-dark-secondary relative border-t border-white/5">
+    <section id="areas" className="py-24 md:py-48 min-h-screen flex flex-col justify-center bg-dark-secondary relative border-t border-white/5">
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <motion.span 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-gold uppercase tracking-[0.4em] text-xs mb-4 block"
+            className="text-gold uppercase tracking-[0.4em] text-sm mb-4 block"
           >
             Áreas de Atuação
           </motion.span>
@@ -54,7 +54,7 @@ export default function HomeAreas() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl lg:text-5xl font-serif text-light-beige font-normal leading-tight mb-8"
+            className="text-xl md:text-5xl lg:text-2xl md:text-4xl lg:text-6xl font-serif text-light-beige font-normal leading-tight mb-8"
           >
             Nossa <span className="italic text-brown-sophisticated">especialização</span>
           </motion.h2>
@@ -63,7 +63,7 @@ export default function HomeAreas() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-light-beige/90 font-normal text-lg"
+            className="text-light-beige/90 font-normal text-xl"
           >
             Atuamos em áreas críticas onde a precisão técnica e o rigor estratégico são fundamentais para o sucesso.
           </motion.p>
@@ -83,8 +83,8 @@ export default function HomeAreas() {
                 onClick={() => setActiveArea(activeArea === area.id ? null : area.id)}
                 className="w-full flex justify-between items-center p-8 text-left hover:bg-dark-secondary transition-colors"
               >
-                <h3 className="text-2xl font-serif text-light-beige transition-colors">{area.title}</h3>
-                <span className="text-gold text-2xl font-normal">{activeArea === area.id ? '−' : '+'}</span>
+                <h3 className="text-xl md:text-3xl font-serif font-bold text-light-beige transition-colors">{area.title}</h3>
+                <span className="text-gold text-xl md:text-3xl font-normal">{activeArea === area.id ? '−' : '+'}</span>
               </button>
               
               <AnimatePresence>
@@ -96,13 +96,13 @@ export default function HomeAreas() {
                     className="overflow-hidden"
                   >
                     <div className="p-8 pt-0 border-t border-white/5 mt-4">
-                      <p className="text-light-beige font-normal leading-relaxed mb-8 text-lg">
+                      <p className="text-light-beige font-normal leading-relaxed mb-8 text-xl whitespace-pre-line">
                         {area.desc}
                       </p>
-                      <h4 className="text-gold uppercase tracking-[0.2em] text-sm mb-4 font-semibold">Focos de Atuação</h4>
+                      <h4 className="text-gold uppercase tracking-[0.2em] text-base mb-4 font-semibold">Focos de Atuação</h4>
                       <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {area.focus.map((item, i) => (
-                          <li key={i} className="flex items-start text-light-beige/90 font-normal text-base">
+                          <li key={i} className="flex items-start text-light-beige/90 font-normal text-lg">
                             <span className="w-6 h-[1px] bg-gold/50 mt-3 mr-4 flex-shrink-0"></span>
                             {item}
                           </li>
@@ -112,7 +112,7 @@ export default function HomeAreas() {
                         href={`https://wa.me/5574999880082?text=${encodeURIComponent('Olá! Gostaria de agendar uma consultoria com um especialista na área de ' + area.title + '.')}`} 
                         target="_blank"
                         rel="noreferrer"
-                        className="inline-block mt-10 text-gold uppercase tracking-widest text-xs hover:text-white transition-colors font-semibold"
+                        className="inline-block mt-10 text-gold uppercase tracking-widest text-sm hover:text-white transition-colors font-semibold"
                       >
                         Agendar Consultoria Específica →
                       </a>

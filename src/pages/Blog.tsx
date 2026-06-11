@@ -29,7 +29,7 @@ export default function Blog() {
   const [activeArticle, setActiveArticle] = useState<number | null>(null);
 
   return (
-    <section id="blog" className="py-32 px-6 lg:px-12 bg-dark">
+    <section id="blog" className="py-24 md:py-48 min-h-screen flex flex-col justify-center px-6 lg:px-12 bg-dark">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -38,11 +38,11 @@ export default function Blog() {
           transition={{ duration: 0.8 }}
           className="max-w-3xl mx-auto text-center mb-20"
         >
-          <span className="text-gold uppercase tracking-[0.4em] text-xs mb-4 block">Artigos e Análises</span>
-          <h2 className="text-4xl lg:text-6xl font-serif text-light-beige font-normal">
+          <span className="text-gold uppercase tracking-[0.4em] text-sm mb-4 block">Artigos e Análises</span>
+          <h2 className="text-xl md:text-5xl lg:text-xl md:text-5xl lg:text-7xl font-serif text-light-beige font-normal">
             Blog <span className="italic text-brown-sophisticated">Jurídico</span>.
           </h2>
-          <p className="mt-8 text-light-beige/90 max-w-2xl mx-auto font-normal text-lg">
+          <p className="mt-8 text-light-beige/90 max-w-2xl mx-auto font-normal text-xl">
             Perspectivas exclusivas e análises aprofundadas sobre o cenário jurídico contemporâneo, elaboradas por nossos especialistas.
           </p>
         </motion.div>
@@ -62,15 +62,15 @@ export default function Blog() {
                 className="w-full flex flex-col md:flex-row justify-between items-start md:items-center p-8 md:p-10 text-left"
               >
                 <div className="max-w-2xl">
-                  <div className="flex items-center space-x-4 mb-4 text-xs font-normal uppercase tracking-widest text-gold/70">
+                  <div className="flex items-center space-x-4 mb-4 text-sm font-normal uppercase tracking-widest text-gold/70">
                     <span>{article.category}</span>
                     <span className="w-1 h-1 bg-gold/30 rounded-full"></span>
                     <span>{article.date}</span>
                   </div>
-                  <h3 className="text-2xl md:text-3xl font-serif text-light-beige group-hover:text-gold transition-colors">{article.title}</h3>
+                  <h3 className="text-xl md:text-2xl md:text-4xl font-serif text-light-beige group-hover:text-gold transition-colors">{article.title}</h3>
                 </div>
                 
-                <div className="flex-shrink-0 mt-6 md:mt-0 md:ml-8 border border-white/10 text-light-beige px-6 py-3 uppercase text-xs tracking-widest group-hover:border-gold group-hover:text-gold transition-all duration-300">
+                <div className="flex-shrink-0 mt-6 md:mt-0 md:ml-8 border border-white/10 text-light-beige px-6 py-3 uppercase text-sm tracking-widest group-hover:border-gold group-hover:text-gold transition-all duration-300">
                   {activeArticle === idx ? 'Fechar' : 'Ler'}
                 </div>
               </button>
@@ -85,14 +85,14 @@ export default function Blog() {
                   >
                     <div className="px-8 md:px-10 pb-10 pt-0">
                       <div className="w-full h-[1px] bg-white/10 mb-6"></div>
-                      <p className="text-light-beige/90 font-normal leading-relaxed text-lg mb-6">
+                      <p className="text-light-beige/90 font-normal leading-relaxed text-xl mb-6">
                         {article.excerpt}
                       </p>
                       <a 
                         href={article.link}
                         target="_blank"
                         rel="noreferrer"
-                        className="inline-block text-gold uppercase tracking-widest text-xs font-semibold hover:text-white transition-colors"
+                        className="inline-block text-gold uppercase tracking-widest text-sm font-semibold hover:text-white transition-colors"
                       >
                         Ler artigo na íntegra (Legislação) →
                       </a>

@@ -7,7 +7,7 @@ const links = [
   { name: 'HOME', path: '#home' },
   { name: 'Sobre', path: '#sobre' },
   { name: 'Áreas de Atuação', path: '#areas' },
-  { name: 'Blog', path: '#blog' },
+
   { name: 'Atendimento', path: '#atendimento' },
   { name: 'Contato', path: '#contato' },
 ];
@@ -50,11 +50,11 @@ export default function Header() {
     <header className="absolute top-0 w-full z-50 bg-transparent py-8 transition-all duration-500">
       <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center relative">
         {/* Logo */}
-        <button onClick={() => scrollTo('#home')} className="z-50 relative group flex items-center h-20 md:h-24 ml-4 lg:ml-12">
+        <button onClick={() => scrollTo('#home')} className="z-50 relative group flex items-center h-32 md:h-48 ml-4 lg:ml-12">
           <img 
             src="/logo%20original.png" 
             alt="Tiago Sales Advocacia" 
-            className="h-full w-auto object-contain scale-110 md:scale-125 transform origin-left translate-x-2 md:translate-x-4"
+            className="h-full w-auto object-contain transform origin-left"
           />
         </button>
 
@@ -65,7 +65,7 @@ export default function Header() {
               key={link.path}
               onClick={() => scrollTo(link.path)}
               className={clsx(
-                'text-sm uppercase tracking-widest transition-all duration-300 font-normal hover:text-gold relative',
+                'text-base uppercase tracking-widest transition-all duration-300 font-normal hover:text-gold relative',
                 activeSection === link.path ? 'text-gold' : 'text-light-beige'
               )}
             >
@@ -104,7 +104,7 @@ export default function Header() {
                 key={link.path}
                 onClick={() => scrollTo(link.path)}
                 className={clsx(
-                  'text-2xl font-serif tracking-widest uppercase transition-colors',
+                  'text-xl md:text-3xl font-serif tracking-widest uppercase transition-colors',
                   activeSection === link.path ? 'text-gold' : 'text-light-beige'
                 )}
               >

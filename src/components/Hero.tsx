@@ -19,9 +19,8 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            <h1 className="text-5xl lg:text-6xl font-serif text-light-beige font-normal leading-[1.1] tracking-wide">
-              Compromisso, ética,<br />
-              <span className="italic text-brown-sophisticated">humanidade</span> e resultados.
+            <h1 className="text-2xl md:text-4xl lg:text-xl md:text-5xl lg:text-7xl font-serif text-light-beige font-normal leading-[1.1] tracking-wide">
+              Soluções jurídicas completas para proteger seus direitos e interesses.
             </h1>
           </motion.div>
 
@@ -29,10 +28,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="text-light-beige font-sans text-xl max-w-2xl font-normal leading-relaxed"
+            className="text-light-beige font-sans text-2xl max-w-2xl font-normal leading-relaxed"
           >
-            Assessoria jurídica completa para causas simples e complexas.<br className="hidden lg:block" /> 
-            Defendemos seus interesses com técnica, profissionalismo e comprometimento absoluto.
+            Atuamos com excelência técnica, profissionalismo e dedicação total aos resultados dos nossos clientes.
           </motion.p>
 
           <motion.div
@@ -46,7 +44,7 @@ export default function Hero() {
               className="relative inline-flex group"
             >
               <span className="absolute inset-0 rounded-full bg-gold opacity-20 animate-ping group-hover:animate-none"></span>
-              <span className="relative inline-flex items-center justify-center bg-gold text-dark px-10 py-5 rounded-full uppercase tracking-widest text-sm font-bold shadow-lg shadow-gold/25 hover:bg-gold-hover hover:scale-105 transition-all duration-300">
+              <span className="relative inline-flex items-center justify-center bg-gold text-dark px-10 py-5 rounded-full uppercase tracking-widest text-base font-bold shadow-lg shadow-gold/25 hover:bg-gold-hover hover:scale-105 transition-all duration-300">
                 <FaWhatsapp className="w-6 h-6 mr-3 text-dark drop-shadow-sm" />
                 Falar com Especialista
               </span>

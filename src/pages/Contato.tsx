@@ -10,8 +10,8 @@ export default function Contato() {
           transition={{ duration: 0.8 }}
           className="mb-20"
         >
-          <span className="text-gold uppercase tracking-[0.4em] text-xs mb-4 block">Atendimento</span>
-          <h1 className="text-5xl lg:text-7xl font-serif text-light-beige font-normal">
+          <span className="text-gold uppercase tracking-[0.4em] text-sm mb-4 block">Atendimento</span>
+          <h1 className="text-2xl md:text-4xl lg:text-2xl md:text-4xl lg:text-6xl md:text-8xl font-serif text-light-beige font-normal">
             Entre em <span className="italic text-brown-sophisticated">Contato</span>.
           </h1>
         </motion.div>
@@ -24,21 +24,21 @@ export default function Contato() {
             className="space-y-12"
           >
             <div>
-              <h3 className="text-gold uppercase tracking-[0.2em] text-xs mb-2 font-semibold">Agendamento Exclusivo</h3>
+              <h3 className="text-gold uppercase tracking-[0.2em] text-sm mb-2 font-semibold">Agendamento Exclusivo</h3>
               <p className="text-light-beige font-normal max-w-md">
                 Para garantir a excelência e o sigilo de nossos serviços, atendemos mediante agendamento prévio.
               </p>
             </div>
             <div>
-              <h3 className="text-gold uppercase tracking-[0.2em] text-xs mb-2 font-semibold">Canais Diretos</h3>
+              <h3 className="text-gold uppercase tracking-[0.2em] text-sm mb-2 font-semibold">Canais Diretos</h3>
               <ul className="space-y-4 text-light-beige font-normal">
                 <li className="flex items-center"><span className="w-8 h-[1px] bg-gold/30 mr-4"></span> +55 11 99999-9999</li>
-                <li className="flex items-center"><span className="w-8 h-[1px] bg-gold/30 mr-4"></span> contato@tiagosalesadv.com.br</li>
+                <li className="flex items-center"><span className="w-8 h-[1px] bg-gold/30 mr-4"></span> adv.tiagosales@gmail.com</li>
               </ul>
             </div>
             <a 
               href="https://wa.me/5511999999999" 
-              className="inline-block bg-gold text-dark px-8 py-4 uppercase tracking-widest text-sm font-semibold hover:bg-light-beige transition-colors duration-300"
+              className="inline-block bg-gold text-dark px-8 py-4 uppercase tracking-widest text-base font-semibold hover:bg-light-beige transition-colors duration-300"
             >
               Iniciar Conversa
             </a>
@@ -62,7 +62,7 @@ export default function Contato() {
               <div>
                 <textarea placeholder="Como podemos ajudar?" rows={5} className="w-full bg-dark-secondary/50 border border-white/10 px-6 py-4 text-light-beige font-normal focus:outline-none focus:border-gold/50 transition-colors resize-none"></textarea>
               </div>
-              <button type="submit" className="w-full border border-gold text-gold px-8 py-4 uppercase tracking-widest text-sm font-semibold hover:bg-gold hover:text-dark transition-colors duration-300">
+              <button type="submit" className="w-full border border-gold text-gold px-8 py-4 uppercase tracking-widest text-base font-semibold hover:bg-gold hover:text-dark transition-colors duration-300">
                 Enviar Mensagem
               </button>
             </form>

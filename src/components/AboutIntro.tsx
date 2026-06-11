@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function AboutIntro() {
   return (
-    <section className="py-32 bg-primary relative border-t border-white/5">
+    <section className="py-24 md:py-48 min-h-screen flex flex-col justify-center bg-primary relative border-t border-white/5">
       <div className="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
         
         {/* Imagem Premium Institucional */}
@@ -32,7 +32,7 @@ export default function AboutIntro() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-metal uppercase tracking-[0.3em] text-xs font-semibold mb-6 block"
+            className="text-metal uppercase tracking-[0.3em] text-sm font-semibold mb-6 block"
           >
             O Escritório
           </motion.span>
@@ -42,7 +42,7 @@ export default function AboutIntro() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-3xl md:text-5xl font-normal text-light tracking-tight mb-8 leading-[1.2]"
+            className="text-2xl md:text-2xl md:text-4xl lg:text-6xl font-normal text-light tracking-tight mb-8 leading-[1.2]"
           >
             Advocacia Full Service com <span className="font-medium text-gradient">visão estratégica</span>
           </motion.h2>
@@ -52,7 +52,7 @@ export default function AboutIntro() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-light-dark font-normal leading-relaxed text-lg mb-6"
+            className="text-light-dark font-normal leading-relaxed text-xl mb-6"
           >
             Tiago Sales Advocacia e Consultoria Jurídica é um escritório estruturado para oferecer assessoria e representação completa para pessoas físicas e jurídicas.
           </motion.p>
@@ -62,7 +62,7 @@ export default function AboutIntro() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="text-light-dark font-normal leading-relaxed text-lg mb-10"
+            className="text-light-dark font-normal leading-relaxed text-xl mb-10"
           >
             Com atuação estratégica, personalizada e foco incansável na solução eficiente, nós não apenas resolvemos problemas legais — construímos blindagem e resultados que protegem o seu futuro e o da sua empresa.
           </motion.p>
@@ -75,12 +75,12 @@ export default function AboutIntro() {
             className="flex gap-12 border-t border-white/10 pt-8"
           >
             <div>
-              <p className="text-3xl font-normal text-light mb-2">10+</p>
-              <p className="text-xs uppercase tracking-widest text-light-dark">Anos de Experiência</p>
+              <p className="text-2xl md:text-4xl font-normal text-light mb-2">10+</p>
+              <p className="text-sm uppercase tracking-widest text-light-dark">Anos de Experiência</p>
             </div>
             <div>
-              <p className="text-3xl font-normal text-light mb-2">100%</p>
-              <p className="text-xs uppercase tracking-widest text-light-dark">Atendimento Personalizado</p>
+              <p className="text-2xl md:text-4xl font-normal text-light mb-2">100%</p>
+              <p className="text-sm uppercase tracking-widest text-light-dark">Atendimento Personalizado</p>
             </div>
           </motion.div>
 

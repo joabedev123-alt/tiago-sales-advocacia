@@ -58,7 +58,7 @@ const itemVariants = {
 
 export default function AreasOfPractice() {
   return (
-    <section className="py-32 bg-primary relative">
+    <section className="py-24 md:py-48 min-h-screen flex flex-col justify-center bg-primary relative">
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       
       <div className="container mx-auto px-6 lg:px-12">
@@ -67,7 +67,7 @@ export default function AreasOfPractice() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-metal uppercase tracking-[0.3em] text-xs font-semibold mb-4 block"
+            className="text-metal uppercase tracking-[0.3em] text-sm font-semibold mb-4 block"
           >
             Especialidades
           </motion.span>
@@ -75,7 +75,7 @@ export default function AreasOfPractice() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-5xl font-normal text-light tracking-tight"
+            className="text-2xl md:text-2xl md:text-4xl lg:text-6xl font-normal text-light tracking-tight"
           >
             Áreas de <span className="font-medium text-gradient">Atuação</span>
           </motion.h2>
@@ -100,15 +100,15 @@ export default function AreasOfPractice() {
                   
                   <Icon className="w-10 h-10 text-light-dark group-hover:text-light mb-8 transition-colors duration-500" strokeWidth={1} />
                   
-                  <h3 className="text-xl font-medium text-light mb-4 tracking-wide group-hover:text-metal transition-colors duration-500">
+                  <h3 className="text-2xl font-medium text-light mb-4 tracking-wide group-hover:text-metal transition-colors duration-500">
                     {area.title}
                   </h3>
                   
-                  <p className="text-light-dark font-normal leading-relaxed text-sm">
+                  <p className="text-light-dark font-normal leading-relaxed text-base">
                     {area.description}
                   </p>
 
-                  <div className="mt-8 flex items-center text-xs uppercase tracking-widest text-metal font-medium group-hover:text-light transition-colors">
+                  <div className="mt-8 flex items-center text-sm uppercase tracking-widest text-metal font-medium group-hover:text-light transition-colors">
                     <span className="mr-2">Saber mais</span>
                     <span className="transform translate-x-0 group-hover:translate-x-2 transition-transform duration-500">→</span>
                   </div>

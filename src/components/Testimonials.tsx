@@ -27,7 +27,7 @@ export default function Testimonials() {
   const prev = () => setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
 
   return (
-    <section className="py-32 bg-primary relative overflow-hidden">
+    <section className="py-24 md:py-48 min-h-screen flex flex-col justify-center bg-primary relative overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
           <div>
@@ -35,7 +35,7 @@ export default function Testimonials() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-metal uppercase tracking-[0.3em] text-xs font-semibold mb-4 block"
+              className="text-metal uppercase tracking-[0.3em] text-sm font-semibold mb-4 block"
             >
               Reconhecimento
             </motion.span>
@@ -43,7 +43,7 @@ export default function Testimonials() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-3xl md:text-5xl font-normal text-light tracking-tight"
+              className="text-2xl md:text-2xl md:text-4xl lg:text-6xl font-normal text-light tracking-tight"
             >
               O que dizem <span className="font-medium text-gradient">nossos clientes</span>
             </motion.h2>
@@ -76,12 +76,12 @@ export default function Testimonials() {
               className="absolute inset-0 border border-white/5 bg-primary-secundary/50 p-8 md:p-12 flex flex-col justify-center"
             >
               <Quote className="w-10 h-10 text-white/10 mb-6" />
-              <p className="text-xl md:text-2xl font-normal text-light leading-relaxed mb-8">
+              <p className="text-2xl md:text-3xl font-normal text-light leading-relaxed mb-8">
                 "{testimonials[currentIndex].text}"
               </p>
               <div>
-                <p className="text-sm font-medium uppercase tracking-widest text-light">{testimonials[currentIndex].author}</p>
-                <p className="text-xs text-light-dark uppercase tracking-wider mt-1">{testimonials[currentIndex].role}</p>
+                <p className="text-base font-medium uppercase tracking-widest text-light">{testimonials[currentIndex].author}</p>
+                <p className="text-sm text-light-dark uppercase tracking-wider mt-1">{testimonials[currentIndex].role}</p>
               </div>
             </motion.div>
           </AnimatePresence>
