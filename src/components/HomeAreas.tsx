@@ -54,7 +54,7 @@ export default function HomeAreas() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-xl md:text-5xl lg:text-2xl md:text-4xl lg:text-6xl font-serif text-light-beige font-normal leading-tight mb-8"
+            className="text-4xl md:text-5xl lg:text-6xl font-serif text-light-beige font-normal leading-tight mb-8"
           >
             Nossa <span className="italic text-brown-sophisticated">especialização</span>
           </motion.h2>

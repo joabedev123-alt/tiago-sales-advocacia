@@ -36,7 +36,7 @@ export default function HomeDifferentials() {
             className="max-w-3xl mx-auto"
           >
             <span className="text-gold uppercase tracking-[0.4em] text-sm mb-4 block">Nossos Pilares</span>
-            <h2 className="text-xl md:text-5xl lg:text-2xl md:text-4xl lg:text-6xl font-serif text-light-beige font-normal leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-light-beige font-normal leading-tight">
               A diferença entre um serviço comum e a <span className="italic text-brown-sophisticated">excelência absoluta</span>.
             </h2>
           </motion.div>

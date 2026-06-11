@@ -17,7 +17,7 @@ export default function Biblioteca() {
           <div className="absolute top-[-20%] left-[-10%] w-96 h-96 bg-gold/20 blur-[120px] rounded-full pointer-events-none"></div>
 
           <span className="relative z-10 text-gold uppercase tracking-[0.4em] text-base mb-6 block font-bold">Nossa Cobertura</span>
-          <h2 className="relative z-10 text-xl md:text-2xl md:text-4xl lg:text-xl md:text-5xl font-serif text-light-beige font-normal leading-snug mb-10">
+          <h2 className="relative z-10 text-3xl md:text-4xl lg:text-5xl font-serif text-light-beige font-normal leading-snug mb-10">
             Atendimento presencial em <span className="text-gold font-bold">Juazeiro/BA</span> e <span className="text-gold font-bold">João Pessoa/PB</span>.{' '}
             <span className="inline-block mt-4 md:mt-0 bg-gold/15 px-4 py-2 rounded text-gold border border-gold/30 italic font-bold shadow-md ml-0 md:ml-2">Atendimento online em todo o território nacional.</span>
           </h2>

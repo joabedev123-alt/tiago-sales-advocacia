@@ -12,7 +12,7 @@ export default function Sobre() {
           className="max-w-7xl mx-auto text-center"
         >
           <span className="text-gold uppercase tracking-[0.4em] text-sm mb-4 block">Sobre Nós</span>
-          <h2 className="text-xl md:text-5xl lg:text-xl md:text-5xl lg:text-7xl font-serif text-light-beige font-normal mb-12">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-light-beige font-normal mb-12">
             Excelência Jurídica com <span className="italic text-brown-sophisticated">Atendimento Personalizado</span>.
           </h2>
           <div className="space-y-6 text-light-beige font-sans text-2xl font-normal leading-relaxed text-justify md:text-center">

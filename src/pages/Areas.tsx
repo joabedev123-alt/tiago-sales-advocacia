@@ -20,7 +20,7 @@ export default function Areas() {
           className="mb-20"
         >
           <span className="text-gold uppercase tracking-[0.4em] text-sm mb-4 block">Nossa Expertise</span>
-          <h1 className="text-2xl md:text-4xl lg:text-2xl md:text-4xl lg:text-6xl md:text-8xl font-serif text-light-beige font-normal">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif text-light-beige font-normal">
             Áreas de <span className="italic text-brown-sophisticated">Atuação</span>.
           </h1>
         </motion.div>

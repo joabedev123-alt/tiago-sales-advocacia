@@ -15,7 +15,7 @@ export default function HomeContact() {
             transition={{ duration: 0.8 }}
           >
             <span className="text-gold uppercase tracking-[0.4em] text-sm mb-4 block">Fale Conosco</span>
-            <h2 className="text-xl md:text-5xl lg:text-xl md:text-5xl lg:text-7xl font-serif text-light-beige font-normal leading-tight mb-8">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-light-beige font-normal leading-tight mb-8">
               Sua estratégia <br />
               <span className="italic text-brown-sophisticated">começa aqui</span>.
             </h2>

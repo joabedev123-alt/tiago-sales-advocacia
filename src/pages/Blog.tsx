@@ -39,7 +39,7 @@ export default function Blog() {
           className="max-w-3xl mx-auto text-center mb-20"
         >
           <span className="text-gold uppercase tracking-[0.4em] text-sm mb-4 block">Artigos e Análises</span>
-          <h2 className="text-xl md:text-5xl lg:text-xl md:text-5xl lg:text-7xl font-serif text-light-beige font-normal">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-light-beige font-normal">
             Blog <span className="italic text-brown-sophisticated">Jurídico</span>.
           </h2>
           <p className="mt-8 text-light-beige/90 max-w-2xl mx-auto font-normal text-xl">
@@ -67,7 +67,7 @@ export default function Blog() {
                     <span className="w-1 h-1 bg-gold/30 rounded-full"></span>
                     <span>{article.date}</span>
                   </div>
-                  <h3 className="text-xl md:text-2xl md:text-4xl font-serif text-light-beige group-hover:text-gold transition-colors">{article.title}</h3>
+                  <h3 className="text-2xl md:text-3xl font-serif text-light-beige group-hover:text-gold transition-colors">{article.title}</h3>
                 </div>
                 
                 <div className="flex-shrink-0 mt-6 md:mt-0 md:ml-8 border border-white/10 text-light-beige px-6 py-3 uppercase text-sm tracking-widest group-hover:border-gold group-hover:text-gold transition-all duration-300">

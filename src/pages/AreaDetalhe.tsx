@@ -59,7 +59,7 @@ export default function AreaDetalhe() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-2xl md:text-4xl lg:text-2xl md:text-4xl lg:text-6xl md:text-8xl font-serif text-light-beige font-normal leading-tight mb-12">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif text-light-beige font-normal leading-tight mb-12">
                 {data.title}
               </h1>
               <p className="text-light-beige font-normal text-xl leading-relaxed mb-16">
